@@ -5,14 +5,6 @@ using namespace std;
 
 bool prime(unsigned long long int x){
 
-    if(x == 2){
-        return true;
-    }
-
-    if((x%2==0)){
-        return false;
-    }
-
     for(unsigned long long int i = 2;i <= sqrt(x);i++){
         if(x % i == 0){
             return false;
