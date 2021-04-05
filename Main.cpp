@@ -20,6 +20,7 @@ int main(){
 
     unsigned long long int num;
     unsigned long long int count = 0;
+    string exit;
 
     cout << "Please enter a number and this program will display all the prime number below it:" << endl;
     cin >> num;
@@ -36,6 +37,8 @@ int main(){
     cout << endl << num << " Has " << count << " Prime numbers below it." << endl; 
 
     printf("Time taken: %.5fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
+
+    cin >> exit;
 
     return 0;
 }
