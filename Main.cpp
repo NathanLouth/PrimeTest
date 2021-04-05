@@ -1,13 +1,15 @@
 #include<iostream>
+#include <cmath>
 using namespace std;
 
 bool prime(unsigned long long int x){
 
-    for(unsigned long long int i = (x-1);i > 1;i--){
+    for(unsigned long long int i = 2;i <= sqrt(x);i++){
         if(x % i == 0){
             return false;
         }
     }
+
 
     return true;
 }
