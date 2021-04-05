@@ -16,14 +16,15 @@ bool prime(unsigned long long int x){
 
 int main(){
 
-    clock_t tStart = clock();
-
     unsigned long long int num;
     unsigned long long int count = 0;
     string exit;
 
     cout << "Please enter a number and this program will display all the prime number below it:" << endl;
     cin >> num;
+    
+    clock_t tStart = clock();
+    
     cout << "Prime numbers.." <<endl;
 
     for(unsigned long long int x = num;x > 1;x--){
